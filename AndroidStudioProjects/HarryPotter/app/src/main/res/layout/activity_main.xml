@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#141010"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/harryHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Anime Quotes"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"/>
+
+    <ImageView
+        android:id="@+id/idImageHarry"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+
+        android:src="@drawable/itachi"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:contentDescription="@string/app_name">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Anime"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/animeName"
+                android:layout_margin="20dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Character"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/idCharacter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text="Quote"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/idQuote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/idGenerateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="40dp"
+        android:background="#A5C9CA"
+        android:gravity="center"
+        android:text="Generate"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+</LinearLayout>
